@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\LibTess2">
+      <UniqueIdentifier>{ffbe5775-a2df-42db-862b-a55cfa14a8db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LibTess2">
+      <UniqueIdentifier>{3ec50d8f-8a44-4d82-93ec-a3a292c9720c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DsEdge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsFace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsMeshOperator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsMeshQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsVert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsMeshBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsPropertyMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsAny.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsMeshOperatorDependencies.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libtess\bucketalloc.h">
+      <Filter>Header Files\LibTess2</Filter>
+    </ClInclude>
+    <ClInclude Include="libtess\dict.h">
+      <Filter>Header Files\LibTess2</Filter>
+    </ClInclude>
+    <ClInclude Include="libtess\geom.h">
+      <Filter>Header Files\LibTess2</Filter>
+    </ClInclude>
+    <ClInclude Include="libtess\mesh.h">
+      <Filter>Header Files\LibTess2</Filter>
+    </ClInclude>
+    <ClInclude Include="libtess\priorityq.h">
+      <Filter>Header Files\LibTess2</Filter>
+    </ClInclude>
+    <ClInclude Include="libtess\sweep.h">
+      <Filter>Header Files\LibTess2</Filter>
+    </ClInclude>
+    <ClInclude Include="libtess\tess.h">
+      <Filter>Header Files\LibTess2</Filter>
+    </ClInclude>
+    <ClInclude Include="libtess\tesselator.h">
+      <Filter>Header Files\LibTess2</Filter>
+    </ClInclude>
+    <ClInclude Include="DsTesselator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsTriangleIndexMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsPointCloud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsPointCloudObserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DsPointCloudState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsEdge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsFace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsVert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsMeshQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsMeshBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsAny.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsPropertyMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsMeshOperator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libtess\bucketalloc.c">
+      <Filter>Source Files\LibTess2</Filter>
+    </ClCompile>
+    <ClCompile Include="libtess\dict.c">
+      <Filter>Source Files\LibTess2</Filter>
+    </ClCompile>
+    <ClCompile Include="libtess\geom.c">
+      <Filter>Source Files\LibTess2</Filter>
+    </ClCompile>
+    <ClCompile Include="libtess\mesh.c">
+      <Filter>Source Files\LibTess2</Filter>
+    </ClCompile>
+    <ClCompile Include="libtess\priorityq.c">
+      <Filter>Source Files\LibTess2</Filter>
+    </ClCompile>
+    <ClCompile Include="libtess\sweep.c">
+      <Filter>Source Files\LibTess2</Filter>
+    </ClCompile>
+    <ClCompile Include="libtess\tess.c">
+      <Filter>Source Files\LibTess2</Filter>
+    </ClCompile>
+    <ClCompile Include="DsTesselator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsTriangleIndexMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsPointCloud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsChannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DsPointCloudObserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

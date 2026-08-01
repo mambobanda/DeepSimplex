@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{F8A0CC18-8C59-4310-8F6C-5A76CC934FE1}</ProjectGuid>
+    <RootNamespace>DeepSimplex</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\DEEP FX SDK DEPENDS\GeometricTools\GTE;C:\DEEP FX SDK DEPENDS\GeometricTools;C:\DEEP FX SDK DEPENDS\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+      <AdditionalOptions>/Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\DEEP FX SDK DEPENDS\sparsehash;C:\DEEP FX SDK DEPENDS\GeometricTools\GTE;C:\DEEP FX SDK DEPENDS\GeometricTools;C:\DEEP FX SDK DEPENDS\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+      <AdditionalOptions>/Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="DsChannel.h" />
+    <ClInclude Include="DsCommon.h" />
+    <ClInclude Include="DsEdge.h" />
+    <ClInclude Include="DsFace.h" />
+    <ClInclude Include="DsMesh.h" />
+    <ClInclude Include="DsMeshBuilder.h" />
+    <ClInclude Include="DsMeshOperator.h" />
+    <ClInclude Include="DsMeshOperatorDependencies.h" />
+    <ClInclude Include="DsMeshQuery.h" />
+    <ClInclude Include="DsPointCloud.h" />
+    <ClInclude Include="DsPointCloudObserver.h" />
+    <ClInclude Include="DsPointCloudState.h" />
+    <ClInclude Include="DsTesselator.h" />
+    <ClInclude Include="DsTools.h" />
+    <ClInclude Include="DsPropertyMap.h" />
+    <ClInclude Include="DsAny.h" />
+    <ClInclude Include="DsTriangleIndexMap.h" />
+    <ClInclude Include="DsType.h" />
+    <ClInclude Include="DsUtil.h" />
+    <ClInclude Include="DsVert.h" />
+    <ClInclude Include="libtess\bucketalloc.h" />
+    <ClInclude Include="libtess\dict.h" />
+    <ClInclude Include="libtess\geom.h" />
+    <ClInclude Include="libtess\mesh.h" />
+    <ClInclude Include="libtess\priorityq.h" />
+    <ClInclude Include="libtess\sweep.h" />
+    <ClInclude Include="libtess\tess.h" />
+    <ClInclude Include="libtess\tesselator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DsChannel.cpp" />
+    <ClCompile Include="DsEdge.cpp" />
+    <ClCompile Include="DsFace.cpp" />
+    <ClCompile Include="DsMesh.cpp" />
+    <ClCompile Include="DsMeshBuilder.cpp" />
+    <ClCompile Include="DsMeshOperator.cpp" />
+    <ClCompile Include="DsMeshQuery.cpp" />
+    <ClCompile Include="DsPointCloudObserver.cpp" />
+    <ClCompile Include="DsPropertyMap.cpp" />
+    <ClCompile Include="DsTesselator.cpp" />
+    <ClCompile Include="DsTools.cpp" />
+    <ClCompile Include="DsAny.cpp" />
+    <ClCompile Include="DsTriangleIndexMap.cpp" />
+    <ClCompile Include="DsUtil.cpp" />
+    <ClCompile Include="DsVert.cpp" />
+    <ClCompile Include="libtess\bucketalloc.c" />
+    <ClCompile Include="libtess\dict.c" />
+    <ClCompile Include="libtess\geom.c" />
+    <ClCompile Include="libtess\mesh.c" />
+    <ClCompile Include="libtess\priorityq.c" />
+    <ClCompile Include="libtess\sweep.c" />
+    <ClCompile Include="libtess\tess.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="DsPointCloud.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
